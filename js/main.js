@@ -1,34 +1,46 @@
-let ticket = parseInt(prompt("Inserisci i km che dovrai percorrere: "));
+let distance = parseInt(prompt("Inserisci i km che dovrai percorrere: "));
 
 let eta = parseInt(prompt("Inserisci eta: "));
 
 let biglietto;
 
-console.log(`Il percorso da te indicato è di : ${ticket} km che dovrai percorre`);
+console.log(`Il percorso da te indicato è di : ${distance} km che dovrai percorre`);
 
 console.log(`L'età del passeggero è di : ${eta} anni`);
 
-km.innerHTML = ticket;
+km.innerHTML = distance;
+age.innerHTML = eta;
 
-biglietto = ticket * 0.21;
+biglietto = distance * 0.21;
+
+sales.innerHTML = biglietto;
 
 console.log(`Il prezzo pieno del biglietto è di : ${biglietto.toFixed(2)} euro`);
 
 
 if (eta < 18) {
 
-    let bigliettoTeen;
+    biglietto = (biglietto - (biglietto * 0.20)).toFixed(2);
 
-    bigliettoTeen = biglietto - (biglietto * 0.20);
+    ticket.innerHTML = biglietto;
 
-    console.log(`Il prezzo del ticket scontato per giovani è: ${bigliettoTeen.toFixed(2)} euro`);
+    console.log(`Il prezzo del distance scontato per giovani è: ${biglietto} euro`);
 
 } else if (eta > 65) {
 
-    let bigliettoOver65;
+    biglietto = (biglietto - (biglietto * 0.40)).toFixed(2);
 
-    bigliettoOver65 = biglietto - (biglietto * 0.40);
+    ticket.innerHTML = biglietto;
 
-    console.log(`Il prezzo del ticket scontato per over 65 è: ${bigliettoOver65.toFixed(2)} euro `);
 
+    console.log(`Il prezzo del distance scontato per over 65 è: ${biglietto} euro `);
+
+} else {
+
+    biglietto = biglietto.toFixed(2);
+
+    
+
+    console.log(`Non hai diritto ad una scontistica. `);
+    console.log(`Il prezzo pieno e': ${biglietto}`);
 }
