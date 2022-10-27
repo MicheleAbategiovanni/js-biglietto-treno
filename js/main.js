@@ -24,7 +24,7 @@ if (eta < 18) {
 
     ticket.innerHTML = biglietto;
 
-    console.log(`Il prezzo del distance scontato per giovani è: ${biglietto} euro`);
+    console.log(`Il prezzo del biglietto scontato per giovani è: ${biglietto} euro`);
 
 } else if (eta > 65) {
 
@@ -33,7 +33,7 @@ if (eta < 18) {
     ticket.innerHTML = biglietto;
 
 
-    console.log(`Il prezzo del distance scontato per over 65 è: ${biglietto} euro `);
+    console.log(`Il prezzo del biglietto scontato per over 65 è: ${biglietto} euro `);
 
 } else {
 
