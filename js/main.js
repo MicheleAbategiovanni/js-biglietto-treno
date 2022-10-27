@@ -6,9 +6,11 @@ console.log(`Il percorso da te indicato è di : ${ticket} km che dovrai percorre
 
 console.log(`L'età del passeggero è di : ${eta} anni`);
 
+
 ticket = ticket * 0.21;
 
 console.log(`Il prezzo pieno del biglietto è di : ${ticket.toFixed(2)} euro`);
+
 
 if (eta < 18) {
 
