@@ -1,3 +1,8 @@
+footer ul li{
+    list-style: none;
+    font-size: .8rem;
+}
+
 .jumbotron {
     background-image: url(../img/jumbotron.jpg);
     width: 100vw;
